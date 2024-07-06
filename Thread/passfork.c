@@ -13,11 +13,11 @@
     while(s <= 0) {
       do nothing;
     }
-    s--;
+    S--;
   } 
 
   V(S) {
-    s++;
+    S++;
   } 
 */
 
