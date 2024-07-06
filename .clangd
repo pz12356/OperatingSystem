@@ -1,2 +1,5 @@
+If:
+    PathExclude: [.*\.cpp]
 CompileFlags:
-    Add: [-std=c17]
+    Add:
+        - "-std=c17"
