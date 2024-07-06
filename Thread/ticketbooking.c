@@ -36,6 +36,5 @@ int main() {
   }
 
   printf("The left tickets is %d\n", ticketAmount);
-
   return 0;
 }
