@@ -31,7 +31,7 @@ int main() {
   
   start = clock();
   pthread_t calculate_pi_threads[10]; // tid array
-  int args[10]; // thraead parameters array
+  int args[10]; // thread parameters array
 
   // create multiple threads thrick
   for (int i = 0; i < 10; i++) {
