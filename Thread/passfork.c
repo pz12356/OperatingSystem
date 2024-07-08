@@ -26,6 +26,7 @@ sem_t roads;
 void* cars(void* args) {
   printf("(%lu) I intended to pass the fork!\n", pthread_self() % 100);
 
+  // P(roads)
   sem_wait(&roads);
 
   printf("(%lu) I am AT the road!\n", pthread_self() % 100);
@@ -33,6 +34,7 @@ void* cars(void* args) {
   printf("(%lu) I have passed the road!\n", pthread_self() % 100);
   sleep(1);
 
+  // V(roads)
   sem_post(&roads);
   pthread_exit(NULL);
 }
