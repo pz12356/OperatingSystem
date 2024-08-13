@@ -48,5 +48,6 @@ int main() {
   for (int i = 0; i < 5; i++) {
     pthread_join(tid[i], NULL);
   }
+  sem_destroy(&roads);
   return 0;
 }
