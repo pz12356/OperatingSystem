@@ -6,6 +6,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/*
+  Strategy:
+    When the file is being written by a writer, any others can't use it;
+    When the file is being read by a reader, other readers can read it but any whiters can't use it.
+*/
+
 #define READERS_NUM 10 
 #define WRITERS_NUM 5 
 
